@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PaiementActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Your Order is almoset finished! Please choose a payment method"
+        android:textSize="25dp"
+        android:padding="12dp"
+        android:textAlignment="center"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/p"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.13"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+
+        <RadioButton
+            android:id="@+id/deliveryPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Payment when delivered"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/cardPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Payment via card"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/confirm_order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/btn_bg_design"
+        android:padding="10dp"
+        android:text="Confirm Order"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

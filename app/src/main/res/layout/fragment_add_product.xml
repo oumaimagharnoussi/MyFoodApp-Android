@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin.AddProductFragment">
+
+    <ImageView
+        android:id="@+id/product_img"
+        android:layout_width="383dp"
+        android:layout_height="126dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/produit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Product Name"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_img"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/product_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Description"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_name"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/product_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Type"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_description"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/product_categorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="category product"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_type"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="product price"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_categorie"
+        app:layout_constraintWidth_percent=".8" />
+
+
+    <EditText
+        android:id="@+id/product_fidelite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="product pt fidelite"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_price"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/product_promotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="product promotion"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_fidelite"
+        app:layout_constraintWidth_percent=".8" />
+
+    <Button
+        android:id="@+id/btn_product"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_bg_design"
+        android:padding="14dp"
+        android:text="Create"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_promotion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

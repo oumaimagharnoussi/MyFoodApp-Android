@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="9dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp"
+    > <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ver_img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/dinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/constraintLayout"
+    android:layout_width="0dp"
+    android:layout_height="90dp"
+    android:background="@drawable/round_bg"
+    app:layout_constraintBottom_toBottomOf="@+id/ver_img"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"> <TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="60dp"
+    android:fontFamily="@font/lobster"
+    android:text="Product Name"
+    android:textColor="@color/white"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.101"
+    app:layout_constraintStart_toStartOf="parent" />
+        <RatingBar
+    android:id="@+id/ratingbar"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:scaleY=".5"
+            android:scaleX=".5"
+            android:max="5"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp"
+            android:stepSize="1"
+
+            android:contentDescription="rate"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="9dp"
+    app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/rating"
+            android:layout_width="13dp"
+            android:layout_height="15dp"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:text="5.0"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/ratingbar"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout" />
+    <!--
+    <ImageView
+    android:id="@+id/imageView7"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginBottom="24dp"
+    android:src="@drawable/ic_baseline_access_time_filled_24"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/name" />
+    -->
+    <!--app:layout_constraintStart_toEndOf="@+id/imageView7"-->
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="24dp"
+        android:text="product type"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.352" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="9dp"
+            android:text="@string/min_45"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.957"
+            app:layout_constraintStart_toEndOf="@+id/type"
+            app:layout_constraintTop_toBottomOf="@+id/rating"
+            app:layout_constraintVertical_bias="0.333" />
+
+        <TextView
+            android:id="@+id/fidelie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pt fiélité:0"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/type"
+            app:layout_constraintTop_toBottomOf="@+id/type"
+            app:layout_constraintVertical_bias="0.562" />
+
+        <TextView
+        android:id="@+id/promotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="9dp"
+        android:text="discount: 0%"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@+id/price"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/favori"
+        android:layout_width="86dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

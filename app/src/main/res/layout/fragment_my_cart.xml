@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.MyCartFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_700"
+            android:text="Total price: 0$"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cartRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/Total"
+            app:layout_constraintBottom_toTopOf="@+id/buyNow"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="259dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buyNow"
+            android:layout_width="170dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="64dp"
+            android:background="@drawable/btn_bg_design"
+            android:text="BUY NOW"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout></FrameLayout>
+

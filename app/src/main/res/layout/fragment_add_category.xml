@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.admin.AddCategoryFragment">
+
+    <ImageView
+        android:id="@+id/category_img"
+        android:layout_width="383dp"
+        android:layout_height="126dp"
+        android:layout_margin="30dp"
+        android:src="@drawable/ic_baseline_category_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Category Name"
+        android:padding="13dp"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_img"
+        app:layout_constraintWidth_percent=".8"
+        />
+
+
+    <EditText
+        android:id="@+id/category_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="Description"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_name"
+        app:layout_constraintWidth_percent=".8" />
+
+    <EditText
+        android:id="@+id/category_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:hint="category discount"
+        android:padding="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category_description"
+        app:layout_constraintWidth_percent=".8" />
+
+
+    <Button
+        android:id="@+id/btn_category"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_design"
+        android:padding="14dp"
+        android:layout_marginTop="30dp"
+        android:text="Create"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/category_discount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+         />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

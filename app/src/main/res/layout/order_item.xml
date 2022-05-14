@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="25dp">
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ORDER DETAILS"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_title"
+        />
+
+    <TextView
+        android:id="@+id/product_purchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ORDER DETAILS"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        />
+
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Price: "
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_purchase"
+        />
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_price"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

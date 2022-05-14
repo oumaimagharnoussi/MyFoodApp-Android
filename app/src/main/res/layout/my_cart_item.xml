@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="7dp"
+    app:cardElevation="5dp"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B3FB9F"
+    android:padding="8dp"
+    android:orientation="vertical"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"> <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Product Name"
+        android:textStyle="bold"
+        android:textSize="16sp"/> <TextView
+    android:id="@+id/product_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="Product Name"
+    android:textStyle="bold"
+    android:textSize="16sp"/> </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Product Price"
+            android:textStyle="bold"
+            android:textSize="16sp"/> <TextView
+        android:id="@+id/product_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Product price"
+        android:textStyle="bold"
+        android:textSize="16sp"/> </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Current date"
+            android:textStyle="bold"
+            android:textSize="16sp"/> <TextView
+        android:id="@+id/Current_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="current date"
+        android:textStyle="bold"
+        android:textSize="16sp"/> </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Current time"
+            android:textStyle="bold"
+            android:textSize="16sp"/> <TextView
+        android:id="@+id/Current_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="current time"
+        android:textStyle="bold"
+        android:textSize="16sp"/> </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="total price"
+            android:textStyle="bold"
+            android:textSize="16sp"/> <TextView
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="total price"
+        android:textStyle="bold"
+        android:textSize="16sp"/> </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="total_quantity"
+            android:textStyle="bold"
+            android:textSize="16sp"/> <TextView
+        android:id="@+id/total_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="total quantity"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_baseline_delete_24" />
+</LinearLayout></androidx.constraintlayout.widget.ConstraintLayout>
+

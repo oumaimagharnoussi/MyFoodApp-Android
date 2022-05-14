@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/categorie_fragment"
+    tools:context=".ui.MyCartFragment">
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/add_categoty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        android:text="Create new category"
+        android:drawableStart="@drawable/ic_baseline_add_24"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:id="@+id/cat_rec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_categoty"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

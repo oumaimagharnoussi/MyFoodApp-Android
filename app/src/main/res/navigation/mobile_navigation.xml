@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.myfoodapp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.myfoodapp.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_daily_meal"
+        android:name="com.example.myfoodapp.ui.order.OrderFragment"
+        android:label="@string/daily_meal"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/nav_favourite"
+        android:name="com.example.myfoodapp.ui.slideshow.FavouriteFragment"
+        android:label="@string/favourite"
+        tools:layout="@layout/fragment_favourite" />
+
+
+            <fragment
+                android:id="@+id/nav_my_cart"
+                android:name="com.example.myfoodapp.ui.MyCartFragment"
+                android:label="@string/my_cart"
+                tools:layout="@layout/fragment_my_cart" />
+    <fragment
+    android:id="@+id/nav_category"
+    android:name="com.example.myfoodapp.ui.category.CategoryFragment"
+    android:label="@string/category"
+    tools:layout="@layout/fragment_category" />
+
+    <fragment
+    android:id="@+id/nav_Order"
+    android:name="com.example.myfoodapp.ui.order.OrderFragment"
+    android:label="Order"
+    tools:layout="@layout/fragment_order" />
+
+    <!-- admin -->
+    <fragment
+        android:id="@+id/nav_Order_admin"
+        android:name="com.example.myfoodapp.ui.order.OrderFragment"
+        android:label="Order"
+        tools:layout="@layout/fragment_order" />
+
+    <fragment
+        android:id="@+id/nav_users_admin"
+        android:name="com.example.myfoodapp.ui.admin.UsersFragment"
+        android:label="Users"
+        tools:layout="@layout/fragment_users" />
+
+    <fragment
+        android:id="@+id/nav_product_admin"
+        android:name="com.example.myfoodapp.ui.admin.ProductFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_product" />
+
+    <fragment
+        android:id="@+id/nav_category_admin"
+        android:name="com.example.myfoodapp.ui.category.CategoryFragment"
+        android:label="@string/category"
+        tools:layout="@layout/fragment_category" />
+
+</navigation>

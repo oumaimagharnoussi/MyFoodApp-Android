@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/user_navigation">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_baseline_category_24"
+            android:title="@string/category" />
+
+        <item
+            android:id="@+id/nav_favourite"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="@string/favourite" />
+        <item
+            android:id="@+id/nav_my_cart"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="@string/My_Cart" />
+
+        <item
+            android:id="@+id/nav_Order"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="Order" />
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/admin_navigation">
+        <item
+            android:id="@+id/nav_Order_admin"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="Order" />
+        <item
+            android:id="@+id/nav_users_admin"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="users" />
+        <item
+            android:id="@+id/nav_product_admin"
+            android:icon="@drawable/ic_baseline_article_24"
+            android:title="product" />
+        <item
+            android:id="@+id/nav_category_admin"
+            android:icon="@drawable/ic_baseline_category_24"
+            android:title="@string/category" />
+
+
+    </group>
+</menu>
